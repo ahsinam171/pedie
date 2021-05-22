@@ -1,0 +1,88 @@
+section {
+  padding: 1rem 5%;
+}
+
+.home {
+  min-height: 75vh;
+  background: url(../images/home-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.home .content span {
+  color: #333;
+  font-size: 2rem;
+}
+
+.home .content h3 {
+  color: #333;
+  font-size: 5.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: #333;
+  background: var(--yellow);
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+  z-index: -1;
+  background: #444;
+  transition: 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
+}
+
+.btn:hover:before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.btn:hover {
+  color: var(--yellow);
+}
+
+.home .content .btn {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .home {
+    background-position: left;
+  }
+
+  .home .content h3 {
+    font-size: 4.3rem;
+  }
+
+  section {
+    padding: 1rem 3%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .home {
+    justify-content: center;
+  }
+
+  .home .content {
+    text-align: center;
+  }
+}

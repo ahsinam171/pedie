@@ -1,0 +1,31 @@
+.deal {
+  height: 75vh;
+  background: url(../images/deal-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.deal span {
+  color: #eee;
+  font-size: 2rem;
+}
+
+.deal h3 {
+  color: #fff;
+  font-size: 4.5rem;
+  padding: 1rem 0;
+  width: 45rem;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .deal h3 {
+    width: auto;
+    font-size: 4rem;
+    
+  }
+}

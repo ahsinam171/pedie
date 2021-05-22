@@ -1,0 +1,31 @@
+.footer .share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  margin: 1rem;
+  font-size: 2rem;
+  padding: 0;
+  text-align: center;
+}
+
+.footer .credit {
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.footer .credit span {
+  color: var(--yellow);
+  
+}
